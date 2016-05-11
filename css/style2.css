@@ -1,0 +1,121 @@
+/*
+Project Name: Relaxer
+Client: GA - Homework 2
+Author: Dawn Robles
+Developer @GA in DTLA
+*/
+
+body {
+	margin: 10px;
+	align-content: center;
+
+}
+
+header, #benefit, #subfooter, footer, #subYellow {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+	background: url("../images/header_bg.jpg");
+	height: 470px;
+	color: white;
+	padding: 50px;
+	margin-bottom: 0px;
+}
+
+header h1 {
+	text-align: left;
+
+}
+
+#btnYellow {
+	background-color: #f9e42e;
+	margin: 10px 0px;
+	padding: 10px;
+	width: 300px;
+	color: black; 
+	font-weight: bold;
+}
+
+#benefit {
+	background-color: #f0efef;
+	height: 450px;
+	color: #606161;
+	text-align: left;
+	padding: 30px;
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#benefit-content {
+	margin: 10px;
+	max-width: 500px;
+}
+
+#subfooter {
+	background: url("../images/testimonial_bg.jpg");
+	height: 350px;
+	color: white;
+	padding: 35px;
+	margin: 0px auto;
+}
+
+footer {
+	background-color: black; 
+	height: 200px;
+	color: white;
+	margin: 0px auto;
+	padding: 25px;
+}
+
+footer p, #subfooter p {
+	text-align: center;
+}
+
+.pBold {
+	font-weight: bold;
+}
+
+.pItalize {
+	font-style: italic;
+}
+
+#subYellow {
+	background-color: #f9e42e;
+	margin: 0px 5px 0px 5px;
+	padding: 20px;
+	height: 50px;
+	vertical-align: bottom;
+}
+
+#btnGray {
+	background-color: #033048;
+	margin: 10px 0px;
+	padding: 10px;
+	width: 300px;
+	color: white; 
+	font-weight: bold;
+}
+
+img {
+
+}
+
+li {
+	padding: 5px 0px;
+}
+
+footer ul {
+	list-style:none;
+}
+
+footer li {
+	display: inline-block;
+	margin: 10px;
+	padding-right: 50px;
+}
