@@ -51,6 +51,7 @@ header h1 {
 	font-size: 16px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #benefit-content {
@@ -72,6 +73,7 @@ footer {
 	color: white;
 	margin: 0px auto;
 	padding: 25px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 footer p, #subfooter p {
