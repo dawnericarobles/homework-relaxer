@@ -1,9 +1,53 @@
 /*
-Project Name: Relaxer
+Project Name: Relaxr
 Client: GA - Homework 2
 Author: Dawn Robles
 Developer @GA in DTLA
 */
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  background-color: #f0efef;
+  width: calc(30%-20px);
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  background-color: #f0efef;
+  width: calc(70%-20px);
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
 
 body {
 	margin: 10px;
@@ -11,32 +55,65 @@ body {
 
 }
 
-header, #benefit, #subfooter, footer, #subYellow {
-	margin-left: auto;
-	margin-right: auto;
+header, #benefit, #subfooter, footer, #subSignUp {
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin: 5px auto;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	font-family: 'Noto Sans', sans-serif;
 }
 
-header {
+#hdrRelaxr {
 	background: url("../images/header_bg.jpg");
-	height: 470px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	max-height: 470px;
 	color: white;
 	padding: 50px;
 	margin-bottom: 0px;
 }
 
-header h1 {
-	text-align: left;
-
+#hdrBlog {
+	background: #033048;
+	max-height: 420px;
+	color: white;
+	padding: 50px;
+	margin-bottom: 0px;
 }
 
-#btnYellow {
+header nav {
+	text-align: right;
+}
+
+header ul {
+	list-style: none;
+}
+
+header li {
+	display: inline-block;
+}
+
+header a {
+	line-height: 35px;
+	color: #f9e42e;
+}
+
+header h1 {
+	text-align: left;
+	line-height: 70px;
+}
+
+header p {
+	line-height: 30px;
+}
+
+#ctaGetnow {
 	background-color: #f9e42e;
 	margin: 10px 0px;
 	padding: 10px;
-	width: 300px;
+	min-width: 150px;
+	max-width: 300px;
 	color: black; 
 	font-weight: bold;
 	border-radius: 10px;
@@ -55,12 +132,15 @@ header h1 {
 }
 
 #benefit-content {
-	margin: 10px;
+	align-content: center;
+	margin: 20px;
 	max-width: 500px;
 }
 
 #subfooter {
 	background: url("../images/testimonial_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	height: 350px;
 	color: white;
 	padding: 35px;
@@ -69,16 +149,24 @@ header h1 {
 
 footer {
 	background-color: black; 
-	height: 200px;
+	min-height: 260px;
+	max-height: 400px;
 	color: white;
 	margin: 0px auto;
-	padding: 25px;
+	padding: 15px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 footer p, #subfooter p {
 	text-align: center;
 }
+
+footer .pBold {
+	color: yellow;
+	font-size: 30px;
+	font-weight: 800;
+}
+
 
 .pBold {
 	font-weight: bold;
@@ -88,19 +176,20 @@ footer p, #subfooter p {
 	font-style: italic;
 }
 
-#subYellow {
+#subSignUp {
 	background-color: #f9e42e;
-	/*margin: 0px 5px 0px 5px;*/
-	padding: 20px;
-	height: 50px;
-	vertical-align: bottom;
+	margin: 0px auto;
+	padding: 10px;
+	height: 90px;
+	vertical-align: top;
 }
 
-#btnGray {
+#ctaRegister {
 	background-color: #033048;
 	margin: 10px 0px;
 	padding: 10px;
-	width: 300px;
+	min-width: 150px;
+	max-width: 300px;
 	color: white; 
 	font-weight: bold;
 	border-radius: 10px;
@@ -123,3 +212,13 @@ footer li {
 	margin: 10px;
 	padding-right: 50px;
 }
+
+
+
+/* ~addons for page 2~ */
+
+ #BlogNavs {
+ 	font-family: 'Open Sans', sans-serif;
+ 	font-size: 24px;
+ 	font-weight: 600;
+ }
