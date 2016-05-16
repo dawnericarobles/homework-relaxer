@@ -32,16 +32,17 @@ Developer @GA in DTLA
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-  background-color: #f0efef;
-  width: calc(30%-20px);
+  padding: 20px 25px 10px 10px; /* note the padding around a right floated image */
+  /*width: calc(30% - 20px);*/
+  width: 30%;
+  height: auto;
 }
 
 .alignleft {
   float: left;
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
-  background-color: #f0efef;
-  width: calc(70%-20px);
+  /*width: calc(70% - 20px);*/
+  width: 70%;
 }
 
 
@@ -50,9 +51,10 @@ Developer @GA in DTLA
 /*******************************************/
 
 body {
-	margin: 10px;
+	margin: 20px;
 	align-content: center;
-
+	color: #121212;
+	font-size: 10px; 
 }
 
 header, #benefit, #subfooter, footer, #subSignUp {
@@ -84,10 +86,13 @@ header, #benefit, #subfooter, footer, #subSignUp {
 
 header nav {
 	text-align: right;
+	font-size: 24px;
 }
 
 header ul {
 	list-style: none;
+	font-weight: 600;
+
 }
 
 header li {
@@ -222,3 +227,54 @@ footer li {
  	font-size: 24px;
  	font-weight: 600;
  }
+
+#content {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f0efef;
+	width: 100%;
+	height: auto;
+	line-height: 25px;
+	font-size: 1.5em; 
+	font-weight: 300;
+}
+
+#content .alignleft article {
+	margin-left: 50px;
+	padding: 25px 5px 10px 25px;
+}
+
+#content .alignleft img {
+   height: auto;
+   width:100%;
+   margin: 15px 0px;
+}
+
+.alignright img {
+	/*height: auto;*/
+   max-width:85%;
+}
+
+.linkRead {
+	text-align: right;
+	font-weight: 600;
+	font-size: 24px;
+	align-content: right;
+}
+
+nav#Categories{
+	padding: 5px;
+}
+
+article#about {
+	padding: 15px 5px;
+}
+
+.alignright aside {
+	padding: 25px 5px;
+}
+
+article h1 {
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 50px;
+}
