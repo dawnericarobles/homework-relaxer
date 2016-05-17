@@ -33,16 +33,21 @@ Developer @GA in DTLA
 .alignright {
   float: right;
   padding: 20px 25px 10px 10px; /* note the padding around a right floated image */
-  /*width: calc(30% - 20px);*/
-  width: 30%;
   height: auto;
+  width: 30%;
+  /* i am confused whether or not to use the specific width 
+  but wanting my page to adjust depending on screen size */
+  /*width: 240px;*/
 }
 
 .alignleft {
   float: left;
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
-  /*width: calc(70% - 20px);*/
+  height: auto;
   width: 70%;
+  /* i am confused whether or not to use the specific width 
+  but wanting my page to adjust depending on screen size */
+  /*width: 700px;*/
 }
 
 
@@ -51,10 +56,14 @@ Developer @GA in DTLA
 /*******************************************/
 
 body {
-	margin: 20px;
+	margin: 15px 30px;
 	align-content: center;
 	color: #121212;
 	font-size: 10px; 
+}
+
+h1, h2 {
+	color: #121212;
 }
 
 header, #benefit, #subfooter, footer, #subSignUp {
@@ -66,7 +75,15 @@ header, #benefit, #subfooter, footer, #subSignUp {
 	font-family: 'Noto Sans', sans-serif;
 }
 
-#hdrRelaxr {
+header#hdrBlog h1 {
+	font-size: 45px;
+	text-align: left;
+	line-height: 60px;
+	font-weight: 800;
+	color: white;
+}
+
+header#hdrRelaxr {
 	background: url("../images/header_bg.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -106,7 +123,7 @@ header a {
 
 header h1 {
 	text-align: left;
-	line-height: 70px;
+	line-height: 60px;
 }
 
 header p {
@@ -233,14 +250,28 @@ footer li {
 	background-color: #f0efef;
 	width: 100%;
 	height: auto;
-	line-height: 25px;
-	font-size: 1.5em; 
+	line-height: 32px;
+	font-size: 24px;
+	/*font-size: 1.5em; */
 	font-weight: 300;
+}
+
+h2 {
+	line-height: 40px;
+	font-weight: 800;
+	font-size: 32px;
+	padding-bottom: 10px;
 }
 
 #content .alignleft article {
 	margin-left: 50px;
 	padding: 25px 5px 10px 25px;
+}
+
+#content .alignleft article p::first-letter {
+	font-size: 800;
+    font-size: 200%;
+    color: #606161;
 }
 
 #content .alignleft img {
@@ -255,18 +286,40 @@ footer li {
 }
 
 .linkRead {
-	text-align: right;
+	/*right: 0;*/
+	margin: 20px 0px;
+	float: right;
 	font-weight: 600;
 	font-size: 24px;
-	align-content: right;
 }
 
-nav#Categories{
-	padding: 5px;
+hr {
+	clear: both;
+	margin-top: 50px;
+}
+
+nav#Categories {
+	line-height: 14px;
+}
+
+nav#Categories ul {
+	margin-left: 5px 0px 20px 0px;
+}
+
+nav#Categories li {
+	margin-left: 5px;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 26px;
 }
 
 article#about {
 	padding: 15px 5px;
+	font-size: 22px;
+}
+
+article#about p {
+	font-weight: 300;
 }
 
 .alignright aside {
@@ -277,4 +330,15 @@ article h1 {
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 50px;
+}
+
+a:link {
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    font-weight: 700;
 }
