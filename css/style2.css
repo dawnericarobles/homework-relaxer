@@ -62,6 +62,12 @@ body {
 	font-size: 10px; 
 }
 
+body#relaxrblog {
+	max-width: 1000px;
+	align-content: center;
+	margin: 15px auto;
+}
+
 h1, h2 {
 	color: #121212;
 }
