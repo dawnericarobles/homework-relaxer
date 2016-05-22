@@ -58,7 +58,7 @@ Developer @GA in DTLA
 body {
 	margin: 15px 30px;
 	align-content: center;
-	color: #121212;
+	color: #606161;
 	font-size: 10px; 
 }
 
@@ -69,7 +69,7 @@ body#relaxrblog {
 }
 
 h1, h2 {
-	color: #121212;
+	color: #043049;
 }
 
 header, #benefit, #subfooter, footer, #subSignUp {
@@ -120,6 +120,7 @@ header ul {
 
 header li {
 	display: inline-block;
+	padding-right: 10px;
 }
 
 header a {
@@ -304,27 +305,31 @@ hr {
 	margin-top: 50px;
 }
 
-nav#Categories {
+nav#categories {
 	line-height: 14px;
 }
 
-nav#Categories ul {
+nav#categories ul {
 	margin-left: 5px 0px 20px 0px;
 }
 
-nav#Categories li {
+nav#categories li {
 	margin-left: 5px;
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 26px;
 }
 
-article#about {
+nav#categories a {
+	color: #043049;
+}
+
+div#about {
 	padding: 15px 5px;
 	font-size: 22px;
 }
 
-article#about p {
+div#about p {
 	font-weight: 300;
 }
 
@@ -341,10 +346,14 @@ article h1 {
 a:link {
 	font-weight: 600;
 	text-decoration: none;
-	color: black;
+	
 }
 
 a:visited {
     text-decoration: none;
     font-weight: 700;
+}
+
+.hidden {
+	display: none;
 }
