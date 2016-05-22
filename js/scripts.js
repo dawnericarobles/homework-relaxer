@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 	$("#read1").click(showMore1);
 	$("#read2").click(showMore2);
+	$("#learn").click(showAbout);
 
 		function showMore1() {
 			event.preventDefault();	
@@ -35,6 +36,21 @@ $(document).ready(function(){
 				$("#read2").text("Read more >");
 			}
 		}
-		
 
+		function showAbout() {
+			event.preventDefault();	
+
+			if ($("#about").find("span").hide()) {
+				// $("span").removeClass("hidden");
+				$("span").slideDown(2000);
+				$("#learn").hide();
+			} 
+			//  else {
+			// 	// $("span").addClass("hidden");
+			// 	$("span").slideUp(2000);
+			// 	$("span").hide();
+			// 	$("#learn").text("Learn More");
+			// }
+		}
+		
 });
